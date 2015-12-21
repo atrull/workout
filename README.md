@@ -3,7 +3,7 @@ Workout
 
 Giving Neo4j 2.2 a workout with Gatling 2.1
 
-Install Neo4j.
+Install Neo4j and maven.
 
 Create some data.
 
@@ -16,12 +16,12 @@ Create some data.
     WHERE rand() < 0.1
     CREATE (u1)-[:FRIENDS]->(u2);
 
-Test (Run Engine)
+$ mvn gatling:execute -Dgatling.simulationClass=GetFriends
 
 Add an index.
 
     CREATE INDEX ON :User(username)
 
-Test again
+$ mvn gatling:execute -Dgatling.simulationClass=GetFriends
 
 See [blog post](http://wp.me/p26jdv-Ja) for more details.
