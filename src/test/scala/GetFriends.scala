@@ -24,7 +24,7 @@ class GetFriends extends Simulation {
 
 
   val scn = scenario("Get Friends")
-    .repeat(1000) {
+    .repeat(100000) {
     feed(feeder)
     .exec(
       http("get friends")
