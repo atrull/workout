@@ -11,7 +11,6 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 		<scala.version>2.11.4</scala.version>
 		<encoding>UTF-8</encoding>
-		<scala-maven-plugin.version>3.2.0</scala-maven-plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
                 <gatling.version>2.1.7</gatling.version>
          	<gatling-plugin.version>2.1.7</gatling-plugin.version>
